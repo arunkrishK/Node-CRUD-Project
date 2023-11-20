@@ -1,0 +1,11 @@
+<h2>Edit Student</h2>
+
+{{#each rows}}
+<form action="/editstudent/{{this.id}}" method="post" autocomplete="off">
+
+Name <input type="text" name="name" value="{{this.name}}" id=""><br>
+Age <input type="text" name="age" value="{{this.age}}" id=""><br>
+City <input type="text" name="place" value="{{this.place}}" id=""><br>
+<button type="submit" name="edit">Edit</button>
+</form>
+{{/each}}
